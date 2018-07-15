@@ -1,41 +1,28 @@
 /* Vehicle interface */
 interface Vehicle {
-  fun getDesc()
+  val type: String
 }
+
 
 /* Vehicle classes */
-class Car : Vehicle {
-  override fun getDesc() {
-    println("This is Car!")
-  }
-}
+class Car(override val type: String = "Car") : Vehicle
+class Ship(override val type: String = "Ship") : Vehicle
+class Plane(override val type: String = "Plane") : Vehicle
 
-class Ship : Vehicle {
-  override fun getDesc() {
-    println("This is Ship!")
-  }
-}
 
-class Plane : Vehicle {
-  override fun getDesc() {
-    println("This is Plane!")
-  }
+/* Vehicle names */
+enum class VehicleName {
+  Ferrari, Porsche, Titanic, Cessna
 }
 
 /* Vehicle Factory */
 class VehicleFactory {
-  fun getVehicle(type: String?): Vehicle? {
-    if (type === "CAR") {
-      return Car()
+  fun vehicleType(name: VehicleName): Vehicle? {
+    return when (name) {
+      VehicleName.Ferrari, VehicleName.Porsche -> Car()
+      VehicleName.Titanic                      -> Ship()
+      VehicleName.Cessna                       -> Plane()
     }
-    else if (type === "SHIP") {
-      return Ship()
-    }
-    else if (type === "PLANE") {
-      return Plane()
-    }
-
-    return null
   }
 }
 
@@ -44,12 +31,12 @@ fun main(args: Array<String>) {
   val factory = VehicleFactory()
 
   // Create each vehicles
-  val car = factory.getVehicle("CAR")
-  car?.getDesc()
+  val ferrariType = factory.vehicleType(VehicleName.Ferrari)?.type
+  println("Ferrari is $ferrariType")
 
-  val ship = factory.getVehicle("SHIP")
-  ship?.getDesc()
+  val titanicType = factory.vehicleType(VehicleName.Titanic)?.type
+  println("Titanic is $titanicType")
 
-  val plane = factory.getVehicle("PLANE")
-  plane?.getDesc()
+  val cessnaType = factory.vehicleType(VehicleName.Cessna)?.type
+  println("Cessna is $cessnaType")
 }
