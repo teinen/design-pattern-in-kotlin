@@ -4,9 +4,19 @@
 
 Study GoF design pattern in Kotlin.
 
-I refer to [this site](https://www.tutorialspoint.com/design_pattern/index.htm).
 
 ## Table of contents
+
+
+## References
+
+Many thanks to these contents!
+
+[Design Patterns](https://www.tutorialspoint.com/design_pattern/)
+
+[Design-Patterns-In-Kotlin](https://github.com/dbacinski/Design-Patterns-In-Kotlin)
+
+[How to implement Builder pattern in Kotlin?](https://stackoverflow.com/questions/36140791/how-to-implement-builder-pattern-in-kotlin)
 
 
 ## Author
