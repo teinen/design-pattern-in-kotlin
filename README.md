@@ -8,20 +8,20 @@ Study GoF design pattern in Kotlin.
 
 ### Creational patterns
 
-* Abstract Factory
-* Builder
-* Factory
-* Singleton
+* [Abstract Factory](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/AbstractFactory.kt)
+* [Builder](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Builder.kt)
+* [Factory](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Factory.kt)
+* [Singleton](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Singleton.kt)
 
 ### Structual patterns
 
-* Adapter
-* Facade
+* [Adapter](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Adapter.kt)
+* [Facade]()
 
 ### Behavioral patterns
 
-* Observer
-* Strategy
+* [Observer](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/behavioral/Observer.kt)
+* [Strategy]()
 
 ## References
 
