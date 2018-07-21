@@ -21,7 +21,7 @@ Study GoF design pattern in Kotlin.
 ### Behavioral patterns
 
 * [Observer](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/behavioral/Observer.kt)
-* [Strategy]()
+* [Strategy](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/behavioral/Strategy.kt)
 
 ## References
 
