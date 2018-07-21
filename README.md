@@ -16,7 +16,7 @@ Study GoF design pattern in Kotlin.
 ### Structual patterns
 
 * [Adapter](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Adapter.kt)
-* [Facade]()
+* [Facade](https://github.com/teinen/design-pattern-in-kotlin/blob/master/src/main/kotlin/creational/Facade.kt)
 
 ### Behavioral patterns
 
